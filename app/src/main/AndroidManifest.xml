@@ -13,6 +13,12 @@
             android:name=".WelcomeActivity"
             android:exported="false" />
         <activity
+            android:name=".GalerieActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Galerie"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

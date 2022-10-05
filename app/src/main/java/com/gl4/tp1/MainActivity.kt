@@ -15,22 +15,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        txtEmail = findViewById(R.id.editTextTextEmailAddress)
-        txtPassword = findViewById(R.id.editTextTextPassword)
-
+        txtEmail = findViewById(R.id.editTextEmailAddress)
+        txtPassword = findViewById(R.id.editTextPassword)
     }
-    var email = txtEmail.text.toString()
-    var password = txtPassword.text.toString()
 
-    fun login(view: View?) {
+    fun login(view: View){
+        var email = txtEmail.text.toString()
+        var password = txtPassword.text.toString()
+
         if(email == "gl4@insat.tn" && password =="insat2022"){
-            Toast.makeText(this,"login successful",Toast.LENGTH_SHORT).show()
-            val intent = Intent(view?.context,WelcomeActivity::class.java)
+            Toast.makeText(this,"successful login",Toast.LENGTH_SHORT).show()
+            val intent = Intent(view.context,WelcomeActivity::class.java)
             intent.putExtra("email",email)
             startActivity(intent)
-
         }else{
-            Toast.makeText(this,"wrong credentials",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"bad credentials",Toast.LENGTH_SHORT).show()
         }
     }
+
 }

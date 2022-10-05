@@ -6,40 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:title="TP1"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="671dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="50dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-        <EditText
-            android:id="@+id/txtWelcome"
+        <TextView
+            android:id="@+id/welcomeMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/welcome_gl4_insat_tn"
-            android:textAlignment="center" />
+            android:text="TextView"
+            android:textSize="25dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,19 +2,18 @@ package com.gl4.tp1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.EditText
 import android.widget.TextView
 
 class WelcomeActivity : AppCompatActivity() {
-
-    lateinit var welcomeMsg : TextView
-
+    lateinit var t : TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        welcomeMsg = findViewById(R.id.txtWelcome)
-        val email = intent.getStringExtra("email")
-        welcomeMsg.text = "Bienvenue $email"
-    }
+        t = findViewById(R.id.welcomeMsg)
 
+        val email = intent.getStringExtra("email")
+        t.text = "Welcome $email"
+    }
 }
