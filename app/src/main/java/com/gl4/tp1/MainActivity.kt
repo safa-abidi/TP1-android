@@ -1,5 +1,6 @@
 package com.gl4.tp1
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -21,9 +22,13 @@ class MainActivity : AppCompatActivity() {
     var email = txtEmail.text.toString()
     var password = txtPassword.text.toString()
 
-    fun login(v: View?) {
+    fun login(view: View?) {
         if(email == "gl4@insat.tn" && password =="insat2022"){
             Toast.makeText(this,"login successful",Toast.LENGTH_SHORT).show()
+            val intent = Intent(view?.context,WelcomeActivity::class.java)
+            intent.putExtra("email",email)
+            startActivity(intent)
+
         }else{
             Toast.makeText(this,"wrong credentials",Toast.LENGTH_SHORT).show()
         }

@@ -12,7 +12,6 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:navigationIcon="?attr/actionModeCloseDrawable"
         app:title="TP1"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="2dp"
