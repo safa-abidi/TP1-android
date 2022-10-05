@@ -33,4 +33,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    fun openGalery(view: View) {
+        val intent2 = Intent(this, GaleryActivity::class.java )
+        startActivity(intent2)
+    }
+
 }

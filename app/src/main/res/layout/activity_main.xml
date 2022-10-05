@@ -59,5 +59,13 @@
             android:text="@string/sign_in"
             android:textAllCaps="false"
             android:onClick="login"/>
+
+        <Button
+            android:id="@+id/btnGalery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Gallery"
+            android:textAllCaps="false"
+            android:onClick="openGalery"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
